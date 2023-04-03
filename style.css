@@ -75,7 +75,7 @@ img {
 
     padding: 10px;
     border-radius: 50%;
-    height: 300px;
+    height: 355px;
     background-image: linear-gradient(to bottom right, #bf7dc1, #562b7c, #33badf);
 }
 
@@ -90,7 +90,7 @@ img {
     color: antiquewhite;
     font-weight: bold;
     letter-spacing: -1px;
-    
+    padding: 20px;
 }
 
 .singleCol {
