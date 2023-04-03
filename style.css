@@ -71,14 +71,15 @@ h2 {
 }
 
 /* Home Page image Settings */
-img {
+.image-1 {
 
     padding: 10px;
     border-radius: 50%;
     height: 315px;
     background-image: linear-gradient(to bottom right, #bf7dc1, #562b7c, #33badf);
-}
 
+}
+/* Home Page Pic Styling */
 .profile-pic {
     padding-top: 10px;
     display: flex;
@@ -93,6 +94,7 @@ img {
     padding: 10px;
 }
 
+/* Social Media Icon Container */
 .singleCol {
     max-width: 500px;
     gap: 50px;
@@ -101,15 +103,58 @@ img {
     margin-right: 20px;
 }
 
+/* Social Media Icon Styling*/
 .social-media-icons-white a {
     color: white;
     font-size: 2rem;
 }
 
+/* Social Media Icon Placement*/
 footer {
-    width:100%;
+    width: 100%;
     position: absolute;
     left: 0;
-    bottom: 0; 
+    bottom: 0;
+
+}
+/* Flexbox containing About Pic/Experience/Education */
+.about-me-content {
+    display: flex;
+    justify-content:space-evenly;
+    padding: 50px;
     
+}
+
+/* About Me Content Text*/
+.about-text {
+    width: 284px;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    text-align: center;
+    color: antiquewhite;
+    
+}
+
+/* About Me Pic*/
+.image-2 {
+    width: 274px;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10%;
+    background-image: linear-gradient(to bottom right, #bf7dc1, #562b7c, #33badf);
+
+}
+
+/* About Me Extra Text*/
+.general {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    color: antiquewhite;
 }
