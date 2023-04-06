@@ -8,8 +8,11 @@
     <title>Donna's Website</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/9fe4678f63.js" crossorigin="anonymous"></script>
+
     <style>
         body {
+            display: flex;
+            justify-content: center;
             background: linear-gradient(#1f5961dd, #331b35dd, #000000);
             height: 100vh;
         }
@@ -17,21 +20,44 @@
 </head>
 
 <body>
-    <!-- Top Navigation Bar -->
-    <section style="display: flex; justify-content: space-between;">
-        <nav class="topnav">
-            <a href="index.html">home</a>
-            <a href="about.html">about</a>
-            <a href="portfolio.html">portfolio</a>
-        </nav>
-        <nav class="topnav" style="display: flex; align-items: center;">
-            <a class="active" href="contact.html">contact me</a>
-        </nav>
     </section>
+    <!-- Everything in the inner black box -->
+    <section class="inner-box">
+        <!-- Top Navigation Bar -->
+        <section style="display: flex; justify-content: space-between;">
+            <nav class="topnav">
+                <a class="active" href="index.html">home</a>
+                <a href="about.html">about</a>
+                <a href="portfolio.html">portfolio</a>
+            </nav>
+            <nav class="topnav" style="display: flex; align-items: center;">
+                <a href="contact.html">contact me</a>
+            </nav>
+        </section>
+
 
     <header>
-        <h1>COMING SOON</h1>
+        <h1>contact me.</h1>
     </header>
+
+    <article>
+        <h2></h2>
+        <div style="display: flex; justify-content: center;">
+        <form style="color: antiquewhite;">
+            <label for="firstname">First Name:</label><br>
+            <input type="text" name="firstname" id="firstname"><br>
+            <label for="lastname">Last Name:</label><br>
+            <input type="text" name="lastname" id="lastname"><br>
+            <label for="email">Email:</label><br>
+            <input type="email" name="email" id="email"><br>
+            <label for="message">Message:</label><br>
+            <input type="text" name="message" id="message" size="50"><br>
+            <div>
+                <a href="formsubmitted.html">Submit!</a>
+            </div>
+        </form>
+    </article>
+</div>
 
     <footer class="socials">
         <div class="container">
