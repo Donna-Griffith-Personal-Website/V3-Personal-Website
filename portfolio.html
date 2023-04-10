@@ -8,15 +8,6 @@
     <title>Donna's Website</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/9fe4678f63.js" crossorigin="anonymous"></script>
-
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            background: linear-gradient(#1f5961dd, #331b35dd, #000000);
-            height: 100vh;
-        }
-    </style>
 </head>
 
 <body>
@@ -24,78 +15,82 @@
     <!-- Everything in the inner black box -->
     <section class="inner-box">
         <!-- Top Navigation Bar -->
-        <section style="display: flex; justify-content: space-between;">
-            <nav class="topnav">
-                <a class="active" href="index.html">home</a>
+        <nav class="topnav">
+            <div>
+                <a href="index.html">home</a>
                 <a href="about.html">about</a>
-                <a href="portfolio.html">portfolio</a>
-            </nav>
-            <nav class="topnav" style="display: flex; align-items: center;">
+                <a class="active" href="portfolio.html">portfolio</a>
+            </div>
+            <div>
                 <a href="contact.html">contact me</a>
-            </nav>
+            </div>
+        </nav>
+
+
+        <header>
+            <h1>projects.</h1>
+        </header>
+
+        <div>
+            <h2 class="no-project">under construction.</h2>
+        </div>
+
+        <section class="portfolio-content">
+            <div class="portfolio-text">
+                <a href="https://github.com/dhanajeane79/Block-6-Grocery-List">
+                    <p style="color: antiquewhite; text-underline-position: below;"> click here for the github
+                        repository</p>
+                <p style="font-size: 25px;"></p>
+                <img src="assets/Grocery List.jpg" alt="Food" class="image-3">
+               
+                </a>
+
+            </div>
+            <div class="about-text">
+                <p class="zoo">the zoo problem</p>
+                <img src="assets/Zoo Problem.jpg" alt="Oh My" class="image-4">
+                <a href="https://github.com/dhanajeane79/Block-6-Grocery-List">
+                    <p style="color: antiquewhite; text-underline-position: below;"> </p>
+                </a>
+
+            </div>
         </section>
 
-    <header>
-        <h1>projects.</h1>
-    </header>
-
-    <div>
-        <h2>under construction.</h2>
-    </div>
-
-    <section class="about-me-content">
-        <div class="about-text">
-            <p style="font-size: 25px;">the grocery list</p>
-            <img src="assets/Grocery List.jpg" alt="Food" class="image-2">
-            <a href="https://github.com/dhanajeane79/Block-6-Grocery-List">
-                <p style="color: antiquewhite; text-underline-position: below;"> click here for the github repository</p>
-            </a>
-
-        </div>
-
-        <div class="about-text">
-            <p style="font-size: 25px;">the zoo problem</p>
-            <img src="assets/Zoo Problem.jpg" alt="Oh My" class="image-4">
-            <a href="https://github.com/dhanajeane79/Block-6-Grocery-List">
-                <p style="color: antiquewhite; text-underline-position: below;"> </p>
-            </a>
-           
-        </div>
-    </section>
-
-    <!-- Name/Address/Phone -->
-    <div class="contact-info" style=" bottom: 0; ">
-        <p style="font-size: 14px; text-align: left; line-height: 1.5;">
-            Donna Griffith<br>
-            45170 Kincora Drive Apt. 328 <br>
-            Sterling, VA 20166 <br>
-            (540)216-1681
-        </p>
-    </div>
-
-    <!-- Social Media Links -->
-    <section class="socials">
-        <div class="container">
-            <div class="singleCol social-media-icons-white">
-                <a href="https://github.com/dhanajeane79">
-                    <i class="fa-brands fa-github fa-bounce"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/donna-griffith-bbaa42142/">
-                    <i class="fa-brands fa-linkedin fa-bounce"></i>
-                </a>
-                <a href="https://www.facebook.com/donnaviolin">
-                    <i class="fa-brands fa-facebook fa-bounce"></i>
-                </a>
-                <a href="https://www.instagram.com/pleasantlyplumper/">
-                    <i class="fa-brands fa-instagram fa-bounce"></i>
-                </a>
-                <a href="https://twitter.com/DhanaJeane79">
-                    <i class="fa-brands fa-twitter fa-bounce"></i>
-                </a>
+        <!-- Name/Address/Phone -->
+        <footer class="contact-socials">
+            <div class="contact-info">
+                <p class="contact">
+                    Donna Griffith<br>
+                    45170 Kincora Drive Apt. 328 <br>
+                    Sterling, VA 20166 <br>
+                    (540)216-1681
+                </p>
             </div>
-        </div>
+
+            <!-- Social Media Links -->
+            <section class="socials">
+                <div class="container">
+                    <div class="singleCol social-media-icons-white">
+                        <a href="https://github.com/dhanajeane79">
+                            <i class="fa-brands fa-github fa-bounce"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/donna-griffith-bbaa42142/">
+                            <i class="fa-brands fa-linkedin fa-bounce"></i>
+                        </a>
+                        <a href="https://www.facebook.com/donnaviolin">
+                            <i class="fa-brands fa-facebook fa-bounce"></i>
+                        </a>
+                        <a href="https://www.instagram.com/pleasantlyplumper/">
+                            <i class="fa-brands fa-instagram fa-bounce"></i>
+                        </a>
+                        <a href="https://twitter.com/DhanaJeane79">
+                            <i class="fa-brands fa-twitter fa-bounce"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </footer>
     </section>
-</section>
     <!-- Console(log) message -->
     <script src="script.js"></script>
 </body>
