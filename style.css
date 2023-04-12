@@ -83,7 +83,7 @@ h2 {
 .home-content {
     display: flex;
     justify-content: space-evenly;
-    margin-top: 15%;
+    margin-top: 10%;
 }
 
 /* Home Page image Settings */
@@ -109,7 +109,18 @@ h2 {
 /* Name/address/Phone */
 .contact-info {
     
-    margin-top: 196px;
+    margin-top: 150px;
+    display: flex;
+    color: aliceblue;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-left: 15px;
+   
+}
+
+.contact-info-about {
+    
+    margin-top: 140px;
     display: flex;
     color: aliceblue;
     justify-content: space-between;
@@ -121,7 +132,7 @@ h2 {
 /* Name/address/Phone portfolio*/
 .contact-info-portfolio {
     
-    margin-top: 0px;
+    margin-top: -55px;
     display: flex;
     color: aliceblue;
     justify-content: space-between;
@@ -132,7 +143,7 @@ h2 {
 /* Name/address/Phone contact-me*/
 .contact-info-contact-me {
     
-    margin-top: 340px;
+    margin-top: 285px;
     display: flex;
     color: aliceblue;
     justify-content: space-between;
