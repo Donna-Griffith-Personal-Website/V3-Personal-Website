@@ -109,7 +109,7 @@ h2 {
 /* Name/address/Phone */
 .contact-info {
     
-    margin-top: 150px;
+    margin-top: 200px;
     display: flex;
     color: aliceblue;
     justify-content: space-between;
@@ -120,7 +120,7 @@ h2 {
 
 .contact-info-about {
     
-    margin-top: 140px;
+    margin-top: 190px;
     display: flex;
     color: aliceblue;
     justify-content: space-between;
@@ -132,7 +132,7 @@ h2 {
 /* Name/address/Phone portfolio*/
 .contact-info-portfolio {
     
-    margin-top: -55px;
+    margin-top: -6px;
     display: flex;
     color: aliceblue;
     justify-content: space-between;
@@ -143,7 +143,7 @@ h2 {
 /* Name/address/Phone contact-me*/
 .contact-info-contact-me {
     
-    margin-top: 285px;
+    margin-top: 335px;
     display: flex;
     color: aliceblue;
     justify-content: space-between;
@@ -385,13 +385,13 @@ figcaption {
 
     /* Name/address/Phone */
     .contact-info {
-        padding-bottom: 35px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        color: aliceblue;
-        margin-left: 10px;
+    
         
+        display: flex;
+        color: aliceblue;
+        flex-direction: column;
+        align-items: center;
+       
     }
 
     .contact {
