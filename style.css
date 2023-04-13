@@ -4,7 +4,6 @@ body {
     justify-content: center;
     background: linear-gradient(#1f5961dd, #331b35dd, #000000);
     height: 100vh;
-    width: 100vw;
 }
 
 /* Inside Black Box */
@@ -57,7 +56,7 @@ h1 {
     font-size: 70px;
     letter-spacing: -1px;
     line-height: 1;
-    margin-top: 0px;
+    margin-top: 100px;
     text-align: center;
 }
 
@@ -72,7 +71,7 @@ p {
 /* H2 font styling */
 h2 {
     font-family: 'Helvetica Neue', sans-serif;
-    font-size: 60px;
+    font-size: 50px;
     font-weight: bold;
     letter-spacing: -1px;
     text-align: center;
@@ -84,7 +83,7 @@ h2 {
 .home-content {
     display: flex;
     justify-content: space-evenly;
-    margin-top: 10%;
+    margin-top: 4%;
 }
 
 /* Home Page image Settings */
@@ -97,7 +96,7 @@ h2 {
 
 /* Home Page pic position */
 .profile-pic {
-    padding-top: 10px;
+    padding-top: 7%;
 }
 
 /* The home page text color and style */
@@ -149,7 +148,7 @@ h2 {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-evenly;
-    padding: 50px;
+    padding: 0px;
 
 }
 
@@ -170,8 +169,8 @@ h2 {
 
 /* Grocery Pic */
 .image-3 {
-    width: 580px;
-    height: 378px;
+    width: 540px;
+    height: 310px;
     margin-top: -89px;
     padding: 10px;
     border-radius: 10%;
@@ -180,9 +179,9 @@ h2 {
 
 /* Zoo Problem Pic*/
 .image-4 {
-    width: 274px;
-    height: 334px;
-    margin-top: -94px;
+    width: 245px;
+    height: 300px;
+    margin-top: -95px;
     padding: 10px;
     border-radius: 10%;
     background-image: linear-gradient(to bottom right, #bf7dc1, #562b7c, #33badf);
@@ -228,12 +227,31 @@ figcaption {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-evenly;
-    padding: 50px;
+    padding: -50px;
 }
 
 .zoo {
     font-size: 25px;
 }
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-content: center;
+    flex-wrap: wrap;
+    }
+
+    .submittedform {
+        margin: 300px;
+        color: linear-gradient(#1f5961dd, #331b35dd, #000000);
+    }
+
+    .contactme {
+        margin-top: 100px;
+    }
+
+
 
 
 @media screen and (max-width: 576px) {
@@ -246,7 +264,7 @@ figcaption {
         display: flex;
         flex-direction: column-reverse;
         justify-content: space-evenly;
-        margin-top: 8%;
+        margin-top: 3%;
     }
 
     .topnav a {
@@ -331,7 +349,7 @@ figcaption {
 
     /* Contact info and Icons */
     .container {
-        padding-bottom: 160px;
+        padding-bottom: 134px;
         position: fixed;
         bottom: 0;
         display: flex;
@@ -357,7 +375,7 @@ figcaption {
     .inner-box {
         background-color: black;
         box-sizing: border-box;
-        width: 85%;
+        width: 95%;
         height: 97%;
     }
 
@@ -376,7 +394,7 @@ figcaption {
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-evenly;
-        padding: 105px;
+        padding: 45px;
     }
 
     .about-text {
@@ -432,14 +450,16 @@ figcaption {
 
     .no-project {
         font-size: 25px;
+        margin-top: 30px;
     }
 
     .portfolio-content {
         display: flex;
         flex-direction: row-reverse;
         justify-content: center;
-        padding: 9px;
+        padding: 10px;
         align-items: center;
+        margin-top: -15px;
     }
 
     .portfolio-text {
@@ -467,5 +487,17 @@ figcaption {
     .zoo {
         font-size: 15px;
         text-align: left;
+    }
+
+    .contactme {
+        margin-top: 100px;
+    }
+
+    .projects {
+        margin-top: 100px;
+    }
+
+    .about-me-head {
+        margin-top: 100px;
     }
 }
