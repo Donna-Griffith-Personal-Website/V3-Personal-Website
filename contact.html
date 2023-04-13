@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Donna's Website</title>
+    <title>Donna's Contact Page</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/9fe4678f63.js" crossorigin="anonymous"></script>
 </head>
@@ -26,87 +26,63 @@
             </div>
         </nav>
 
+        <header>
+            <h1 class="contactme">contact me.</h1>
+        </header>
 
+        <!-- Form Structure -->
+        <article class="form">
+            <form id="form" action="formsubmitted.html" method="POST" enctype="multipart/form-data"
+                style="color: antiquewhite;">
+                <label for="name">Name: </label>
+                <input type="text" name="name" id="name"><br>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email"><br>
+                <label for="message" for="message">Your message:</label>
+                <textarea id="message" class="input" name="message" rows="10" cols="40"></textarea><br />
+                <div>
+                    <input id="submit" type="submit" value="Send email" />
+                </div>
+            </form>
 
-    <header>
-        <h1 class="contactme">contact me.</h1>
-    </header>
+            <!-- Name/Address/Phone -->
+            <footer class="contact-socials">
+                <div class="contact-info">
+                    <p class="contact">
+                        Donna Griffith<br>
+                        45170 Fake Address Apt. 328 <br>
+                        Somewhere, VA 22222 <br>
+                        (555)555-5555
+                    </p>
+                </div>
 
-    <article class="form">
-
-        <form id="form"  action="formsubmitted.html" method="POST" enctype="multipart/form-data" style="color: antiquewhite;">
-            <label for="name">Name: </label>
-            <input type="text" name="name" id="name" ><br>
-            <label for="email">Email:</label>
-            <input type="email" name="email" id="email"><br>
-            <label for="message" for="message">Your message:</label>
-            <textarea id="message" class="input" name="message" rows="10" cols="40"></textarea><br />
-           <div>
-            <input id="submit" type="submit" value="Send email"/>
-             
-        </div>
-          </form> 
-        
-       
-     <!--  
-        
-        <div style="display: flex; justify-content: center;">
-        <form id = "form"  action="#" method="POST" style="color: antiquewhite;">
-            <label for="firstname">First Name:</label><br>
-            <input type="text" name="firstname" id="firstname"><br>
-            <label for="lastname">Last Name:</label><br>
-            <input type="text" name="lastname" id="lastname"><br>
-            <label for="email">Email:</label><br>
-            <input type="email" name="email" id="email"><br>
-            <label for="message">Message:</label><br>
-            <input type="text" name="message" id="message" size="50"><br>
-            <div>
-                <a href="formsubmitted.html">Submit!</a>
-            </div>
-        </form>
-    </article>
-</div>
--->
-
-<!-- Name/Address/Phone -->
-<footer class="contact-socials">
-    <div class="contact-info">
-        <p class="contact">
-            Donna Griffith<br>
-            45170 Kincora Drive Apt. 328 <br>
-            Sterling, VA 20166 <br>
-            (540)216-1681
-        </p>
-    </div>
-    
-
-    <!-- Social Media Links -->
-    <section class="socials">
-        <div class="container">
-            <div class="singleCol social-media-icons-white">
-                <a href="https://github.com/dhanajeane79">
-                    <i class="fa-brands fa-github fa-bounce"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/donna-griffith-bbaa42142/">
-                    <i class="fa-brands fa-linkedin fa-bounce"></i>
-                </a>
-                <a href="https://www.facebook.com/donnaviolin">
-                    <i class="fa-brands fa-facebook fa-bounce"></i>
-                </a>
-                <a href="https://www.instagram.com/pleasantlyplumper/">
-                    <i class="fa-brands fa-instagram fa-bounce"></i>
-                </a>
-                <a href="https://twitter.com/DhanaJeane79">
-                    <i class="fa-brands fa-twitter fa-bounce"></i>
-                </a>
-            </div>
-            </div>
-        </div>
+                <!-- Social Media Links -->
+                <section class="socials">
+                    <div class="container">
+                        <div class="singleCol social-media-icons-white">
+                            <a href="https://github.com/dhanajeane79">
+                                <i class="fa-brands fa-github fa-bounce"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/donna-griffith-bbaa42142/">
+                                <i class="fa-brands fa-linkedin fa-bounce"></i>
+                            </a>
+                            <a href="https://www.facebook.com/donnaviolin">
+                                <i class="fa-brands fa-facebook fa-bounce"></i>
+                            </a>
+                            <a href="https://www.instagram.com/pleasantlyplumper/">
+                                <i class="fa-brands fa-instagram fa-bounce"></i>
+                            </a>
+                            <a href="https://twitter.com/DhanaJeane79">
+                                <i class="fa-brands fa-twitter fa-bounce"></i>
+                            </a>
+                        </div>
+                    </div>
+                    </div>
+                </section>
+            </footer>
     </section>
-</footer>
-</section>
-<!-- Console(log) message -->
-<script src="script.js"></script>
+    <!-- Console(log) message -->
+    <script src="script.js"></script>
 </body>
 
 </html>
