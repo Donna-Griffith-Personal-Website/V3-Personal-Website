@@ -1,3 +1,5 @@
+/* CSS Elements */
+
 /* Body Style */
 body {
     display: flex;
@@ -6,7 +8,48 @@ body {
     height: 100vh;
 }
 
-/* Inside Black Box */
+/* H1 Style */
+h1 {
+    color: antiquewhite;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 70px;
+    letter-spacing: -1px;
+    line-height: 1;
+    margin-top: 100px;
+    text-align: center;
+}
+
+/* H2 Style */
+h2 {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    text-align: center;
+    color: antiquewhite;
+    text-align: center;
+}
+
+/* Main Content Text Style */
+p {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    line-height: 32px;
+    text-align: center;
+}
+
+/* Contact Me Form */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+/* CSS Classes - All Pages*/
+
+/* Inside Black Box - All Pages */
 .inner-box {
     background-color: black;
     box-sizing: border-box;
@@ -18,13 +61,13 @@ body {
     border-right: 25px solid transparent;
 }
 
-/* Entire Nav Bar */
+/* Nav Bar Link Position - All Pages */
 .topnav {
     display: flex;
     justify-content: space-between;
 }
 
-/* Style the links inside the Nav Bar */
+/* Nav Bar Link Text Style - All Pages */
 .topnav a {
     float: left;
     font-family: 'Helvetica Neue', sans-serif;
@@ -36,77 +79,20 @@ body {
     border-radius: 8px;
 }
 
-/* Change the color of links on hover in Nav Bar */
+/* Nav Bar Hover Effect Style - All Pages */
 .topnav a:hover {
     background-color: #077b86;
     color: black;
 }
 
-/* Add a color to the active/current link in Nav Bar */
+/* Nav Bar Active/Current Style - All Pages */
 .topnav a.active {
     background-color: #46214ddd;
     color: white;
     border-radius: 8px;
 }
 
-/* Main Header font styling */
-h1 {
-    color: antiquewhite;
-    font-family: 'Helvetica Neue', sans-serif;
-    font-size: 70px;
-    letter-spacing: -1px;
-    line-height: 1;
-    margin-top: 100px;
-    text-align: center;
-}
-
-/* Main Content font styling*/
-p {
-    font-family: 'Helvetica Neue', sans-serif;
-    font-size: 18px;
-    line-height: 32px;
-    text-align: center;
-}
-
-/* H2 font styling */
-h2 {
-    font-family: 'Helvetica Neue', sans-serif;
-    font-size: 50px;
-    font-weight: bold;
-    letter-spacing: -1px;
-    text-align: center;
-    color: antiquewhite;
-    text-align: center;
-}
-
-/* Home Page pic and text position */
-.home-content {
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 4%;
-}
-
-/* Home Page image Settings */
-.image-1 {
-    padding: 10px;
-    border-radius: 50%;
-    height: 315px;
-    background-image: linear-gradient(to bottom right, #bf7dc1, #562b7c, #33badf);
-}
-
-/* Home Page pic position */
-.profile-pic {
-    padding-top: 7%;
-}
-
-/* The home page text color and style */
-.home-text {
-    color: antiquewhite;
-    font-weight: bold;
-    padding: 10px;
-}
-
-/* Name/address/Phone */
+/* Name/Address/Phone - All Pages */
 .contact-info {
     padding-bottom: 35px;
     display: flex;
@@ -118,48 +104,114 @@ h2 {
     bottom: 0;
 }
 
-/* Home Page small text */
-.blurb {
+/* Name/Address/Phone Text Style - All Pages */
+.contact {
+    font-size: 14px;
     text-align: left;
-    font-weight: lighter;
+    line-height: 1.5;
 }
 
-/* Social Media Icon Container */
+/* Social Media Icon Spacing - All Pages */
 .singleCol {
     gap: 50px;
     display: flex;
     margin-right: 20px;
 }
 
-/* Social icon position */
+/* Social Media Icon Position - All Pages */
 .socials {
     display: flex;
     justify-content: end;
 }
 
-/* Social Media Icon Styling*/
+/* Social Media Icon Size and Color - All Pages */
 .social-media-icons-white a {
     color: white;
     font-size: 2rem;
 }
 
-/* Flexbox containing About Pic/Experience/Education */
-.about-me-content {
+/* Social Media Icon Position - All Pages */
+.container {
+    padding-bottom: 50px;
+    position: fixed;
+    bottom: 0;
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-evenly;
-    padding: 0px;
-
 }
 
-/* About Me Content Text*/
+/* CSS Classes - Index Page */
+
+/* INDEX - Introduction/Profile Pic/Download Resume - Position */
+.home-content {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 4%;
+}
+
+/* INDEX - Text Color and Style */
+.home-text {
+    color: antiquewhite;
+    font-weight: bold;
+    padding: 10px;
+}
+
+/* INDEX - Intro Blurb Font Style */
+.blurb {
+    text-align: left;
+    font-weight: lighter;
+}
+
+/* INDEX - Profile Pic Position */
+.profile-pic {
+    padding-top: 7%;
+}
+
+/* INDEX - Profile Pic Size and Border Style */
+.image-1 {
+    padding: 10px;
+    border-radius: 50%;
+    height: 315px;
+    background-image: linear-gradient(to bottom right, #bf7dc1, #562b7c, #33badf);
+}
+
+/* CSS Classes - About Me Page */
+
+/* ABOUT ME - Education/Experience Font Size */
+.about-content-1 {
+    font-size: 25px;
+    text-align: left;
+}
+
+/* ABOUT ME - Education/Experience Detail Text Alignment */
+.about-content-2 {
+    text-align: left;
+}
+
+/* ABOUT ME - Education/Experience Detail Text*/
 .about-text {
     width: 300px;
     letter-spacing: -1px;
     color: antiquewhite;
 }
 
-/* About Me Pic*/
+/* ABOUT ME - Flexbox containing Pic/Experience/Education */
+.about-me-content {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    padding: 0px;
+}
+
+/* ABOUT ME - Flexbox containing Experience/Education (No Pic) */
+.exper-edu {
+    display: flex;
+}
+
+/* ABOUT ME - Pic Position */
+.pic-and-caption {
+    margin: 0px;
+}
+
+/* ABOUT ME - Pic Border*/
 .image-2 {
     width: 200px;
     padding: 5px;
@@ -167,7 +219,23 @@ h2 {
     background-image: linear-gradient(to bottom right, #bf7dc1, #562b7c, #33badf);
 }
 
-/* Grocery Pic */
+/* ABOUT ME - Pic Caption */
+figcaption {
+    color: antiquewhite;
+    font-size: 13px;
+}
+
+/* CSS Classes - Portfolio Page */
+
+/* PORTFOLIO - Flexbox with 2 Images */
+.portfolio-content {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    padding: -50px;
+}
+
+/* PORTFOLIO - Grocery List Pic */
 .image-3 {
     width: 540px;
     height: 310px;
@@ -177,7 +245,7 @@ h2 {
     background-image: linear-gradient(to bottom right, #bf7dc1, #562b7c, #33badf);
 }
 
-/* Zoo Problem Pic*/
+/* PORTFOLIO - Zoo Problem Pic */
 .image-4 {
     width: 245px;
     height: 300px;
@@ -187,117 +255,16 @@ h2 {
     background-image: linear-gradient(to bottom right, #bf7dc1, #562b7c, #33badf);
 }
 
-/* Social icons location */
-.container {
-    padding-bottom: 50px;
-    position: fixed;
-    bottom: 0;
-    display: flex;
-}
-
-.contact {
-    font-size: 14px;
-    text-align: left;
-    line-height: 1.5;
-}
-
-figcaption {
-    color: antiquewhite;
-    font-size: 13px;
-}
-
-.exper-edu {
-    display: flex;
-
-}
-
-.pic-and-caption {
-    margin: 0px;
-}
-
-.about-content-1 {
-    font-size: 25px;
-}
-
-.about-content-2 {
-    font-size: 10;
-}
-
-.portfolio-content {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-evenly;
-    padding: -50px;
-}
-
+/* PORTFOLIO - Hidden Text Behind Pics(Seen on Small Screen) */
 .zoo {
     font-size: 25px;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    align-content: center;
-    flex-wrap: wrap;
-    }
-
-    .submittedform {
-        margin: 300px;
-        color: linear-gradient(#1f5961dd, #331b35dd, #000000);
-    }
-
-    .contactme {
-        margin-top: 100px;
-    }
-
-
-
+/* Media Queries - CSS rules for small screens */
 
 @media screen and (max-width: 576px) {
 
-    /* CSS rules for small screens */
-
-
-
-    .home-content {
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: space-evenly;
-        margin-top: 3%;
-    }
-
-    .topnav a {
-        float: left;
-        font-family: 'Helvetica Neue', sans-serif;
-        font-weight: bold;
-        color: #f2f2f2;
-        text-align: center;
-        padding: 14px 16px;
-        font-size: 14px;
-        border-radius: 8px;
-    }
-
-    .image-1 {
-        padding: 10px;
-        border-radius: 50%;
-        height: 175px;
-        background-image: linear-gradient(to bottom right, #bf7dc1, #562b7c, #33badf);
-    }
-
-    .profile-pic {
-        padding-top: 10px;
-        display: flex;
-        justify-content: center;
-    }
-
-    .home-text {
-        color: antiquewhite;
-        font-weight: bold;
-        letter-spacing: -1px;
-        padding: 10px;
-    }
-
+    /* MQ - H1 Style - All Pages */
     h1 {
         display: flex;
         justify-content: center;
@@ -311,13 +278,7 @@ form {
         margin-top: 15px;
     }
 
-    /* Home Page small text */
-    .blurb {
-        text-align: center;
-        font-weight: lighter;
-    }
-
-    /* Main Content font styling*/
+    /*MQ - Main Content font styling - All Pages */
     p {
         font-family: 'Helvetica Neue', sans-serif;
         font-size: 14px;
@@ -325,37 +286,28 @@ form {
         text-align: center;
     }
 
-    /* Social Media Icon Container */
-    .singleCol {
-        justify-content: center;
+    /* MQ - Inside Black Box - All Pages */
+    .inner-box {
+        background-color: black;
+        box-sizing: border-box;
+        width: 95%;
+        height: 97%;
     }
 
-    /* Social icon position */
-    .socials {
-        display: flex;
-        justify-content: center;
+
+    /* MQ - Nav Bar Link Text Style - All Pages */
+    .topnav a {
+        float: left;
+        font-family: 'Helvetica Neue', sans-serif;
+        font-weight: bold;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        font-size: 14px;
+        border-radius: 8px;
     }
 
-    /* Social Media Icon Styling*/
-    .social-media-icons-white a {
-        color: white;
-        font-size: 2rem;
-    }
-
-    /* Social Media Icon Styling*/
-    .singleCol social-media-icons-white {
-        justify-content: center;
-    }
-
-    /* Contact info and Icons */
-    .container {
-        padding-bottom: 134px;
-        position: fixed;
-        bottom: 0;
-        display: flex;
-    }
-
-    /* Name/address/Phone */
+    /* MQ - Name/Address/Phone - All Pages */
     .contact-info {
         padding-bottom: 35px;
         display: flex;
@@ -367,29 +319,97 @@ form {
         bottom: 0;
     }
 
+    /* MQ - Name/Address/Phone Text Style - All Pages */
     .contact {
         font-size: 11px;
         line-height: 1.5;
     }
 
-    .inner-box {
-        background-color: black;
-        box-sizing: border-box;
-        width: 95%;
-        height: 97%;
+    /* MQ - Social Media Icon Spacing - All Pages */
+    .singleCol {
+        justify-content: center;
     }
 
-    .contact-socials {
+    /* MQ - Social Media Icon Position - All Pages */
+    .socials {
         display: flex;
         justify-content: center;
     }
 
-    /* About Me Pic*/
-    .image-2 {
-        width: 115px;
-        margin-top: 40px;
+    /* MQ - Social Media Icon Size and Color - All Pages */
+    .social-media-icons-white a {
+        color: white;
+        font-size: 2rem;
     }
 
+    /* MQ - Social Media Icon Styling - All Pages */
+    .singleCol social-media-icons-white {
+        justify-content: center;
+    }
+
+    /* MQ - Social Media Container Position - All Pages */
+    .container {
+        padding-bottom: 134px;
+        position: fixed;
+        bottom: 0;
+        display: flex;
+    }
+
+    /* MQ - INDEX - Introduction/Profile Pic/Download Resume - Position */
+    .home-content {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+        margin-top: 3%;
+    }
+
+    /* MQ - INDEX - Text Color and Style */
+    .home-text {
+        color: antiquewhite;
+        font-weight: bold;
+        letter-spacing: -1px;
+        padding: 10px;
+    }
+
+    /* MQ - INDEX - Intro Blurb Font Style */
+    .blurb {
+        text-align: center;
+        font-weight: lighter;
+    }
+
+    /* MQ - INDEX - Profile Pic Position */
+    .profile-pic {
+        padding-top: 10px;
+        display: flex;
+        justify-content: center;
+    }
+
+    /* MQ - INDEX - Profile Pic Size and Border Style */
+    .image-1 {
+        padding: 10px;
+        border-radius: 50%;
+        height: 175px;
+        background-image: linear-gradient(to bottom right, #bf7dc1, #562b7c, #33badf);
+    }
+
+    /* MQ - ABOUT ME - Education/Experience Font Size */
+    .about-content-1 {
+        font-size: 15px;
+        text-align: left;
+    }
+
+    /* MQ - ABOUT ME - Education/Experience Detail Text Alignment */
+    .about-content-2 {
+        font-size: 13px;
+        text-align: left;
+    }
+
+    /* MQ - ABOUT ME - Education/Experience Detail Text*/
+    .about-text {
+        width: 150px;
+    }
+
+    /* MQ - ABOUT ME - Flexbox containing Pic/Experience/Education */
     .about-me-content {
         display: flex;
         flex-direction: row-reverse;
@@ -397,62 +417,61 @@ form {
         padding: 45px;
     }
 
-    .about-text {
-        width: 150px;
-    }
-
+    /* MQ - ABOUT ME - Flexbox containing Experience/Education (No Pic) */
     .exper-edu {
         display: flex;
         flex-direction: row;
     }
 
-    .about-content-1 {
-        font-size: 20px;
+    /* MQ - ABOUT ME - Pic Position */
+    .pic-and-caption {
+        margin: 5px;
+        margin-top: -64px;
     }
 
-    .schools {
-        font-size: 13px;
-        line-height: 1.5;
+    /* MQ - ABOUT ME - Pic Border*/
+    .image-2 {
+        width: 115px;
+        margin-top: 40px;
     }
 
-    .about-content-1 {
-        font-size: 15px;
-        text-align: left;
-    }
-
-    .employment {
-        font-size: 13px;
-        line-height: 1.5;
-    }
-
+    /* MQ - ABOUT ME - Pic Caption */
     figcaption {
         color: antiquewhite;
         font-size: 11px;
     }
 
+    /* MQ - ABOUT ME - Pic Caption */
     .caption {
-
         margin-block-start: 1em;
         margin-block-end: 1em;
         margin-inline-start: 40px;
         margin-inline-end: 40px;
     }
 
-    .about-content-2 {
+    /* MQ - ABOUT ME - Education Font */
+    .schools {
         font-size: 13px;
-        text-align: left;
+        line-height: 1.5;
     }
 
-    .pic-and-caption {
-        margin: 5px;
-        margin-top: -64px;
+    /* MQ - ABOUT ME - Employment Font */
+    .employment {
+        font-size: 13px;
+        line-height: 1.5;
     }
 
-    .no-project {
-        font-size: 25px;
-        margin-top: 30px;
+    /* MQ - ABOUT ME - H1 Margin */
+    .about-me-head {
+        margin-top: 100px;
     }
 
+    /* MQ - PORTFOLIO - H1 Margin */
+    .projects {
+        margin-top: 100px;
+    }
+
+    /* MQ - PORTFOLIO - Flexbox with 2 Images */
     .portfolio-content {
         display: flex;
         flex-direction: row-reverse;
@@ -462,10 +481,18 @@ form {
         margin-top: -15px;
     }
 
+    /* MQ - PORTFOLIO - Pic Position */
+    .no-project {
+        font-size: 25px;
+        margin-top: 30px;
+    }
+
+    /* MQ - PORTFOLIO Text Size */
     .portfolio-text {
         width: 250px;
     }
 
+    /* MQ - PORTFOLIO - Grocery List Pic */
     .image-3 {
         width: 230px;
         height: 106px;
@@ -475,6 +502,7 @@ form {
         background-image: linear-gradient(to bottom right, #bf7dc1, #562b7c, #33badf);
     }
 
+    /* MQ - PORTFOLIO - Zoo Problem Pic */
     .image-4 {
         width: 100px;
         height: 147px;
@@ -484,20 +512,20 @@ form {
         background-image: linear-gradient(to bottom right, #bf7dc1, #562b7c, #33badf);
     }
 
+    /* MQ - PORTFOLIO - Pic Text */
     .zoo {
         font-size: 15px;
         text-align: left;
     }
 
+    /* MQ - CONTACT ME - Social Media Icon Position */
+    .contact-socials {
+        display: flex;
+        justify-content: center;
+    }
+
+    /* MQ - CONTACT ME - H1 Margin */
     .contactme {
-        margin-top: 100px;
-    }
-
-    .projects {
-        margin-top: 100px;
-    }
-
-    .about-me-head {
         margin-top: 100px;
     }
 }
