@@ -4,6 +4,7 @@ body {
     justify-content: center;
     background: linear-gradient(#1f5961dd, #331b35dd, #000000);
     height: 100vh;
+    width: 100vw;
 }
 
 /* Inside Black Box */
@@ -108,47 +109,14 @@ h2 {
 
 /* Name/address/Phone */
 .contact-info {
-    
-    margin-top: 200px;
+    padding-bottom: 35px;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     color: aliceblue;
-    justify-content: space-between;
-    align-items: flex-end;
-    margin-left: 15px;
-   
-}
-
-.contact-info-about {
-    
-    margin-top: 190px;
-    display: flex;
-    color: aliceblue;
-    justify-content: space-between;
-    align-items: flex-end;
-    margin-left: 15px;
-   
-}
-
-/* Name/address/Phone portfolio*/
-.contact-info-portfolio {
-    
-    margin-top: -6px;
-    display: flex;
-    color: aliceblue;
-    justify-content: space-between;
-    align-items: flex-end;
-    margin-left: 15px;
-}
-
-/* Name/address/Phone contact-me*/
-.contact-info-contact-me {
-    
-    margin-top: 335px;
-    display: flex;
-    color: aliceblue;
-    justify-content: space-between;
-    align-items: flex-end;
-    margin-left: 15px;
+    margin-left: 10px;
+    position: fixed;
+    bottom: 0;
 }
 
 /* Home Page small text */
@@ -166,11 +134,9 @@ h2 {
 
 /* Social icon position */
 .socials {
-    padding-bottom: 12px;
     display: flex;
     justify-content: end;
 }
-
 
 /* Social Media Icon Styling*/
 .social-media-icons-white a {
@@ -183,8 +149,7 @@ h2 {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-evenly;
-    padding: 13px;
-    margin-top: 99px;
+    padding: 50px;
 
 }
 
@@ -225,7 +190,9 @@ h2 {
 
 /* Social icons location */
 .container {
-    padding-bottom: 0px;
+    padding-bottom: 50px;
+    position: fixed;
+    bottom: 0;
     display: flex;
 }
 
@@ -268,27 +235,12 @@ figcaption {
     font-size: 25px;
 }
 
-.form {
-    margin-top: 150px;
-}
 
-
- @media screen and  (max-width: 576px)  {
+@media screen and (max-width: 576px) {
 
     /* CSS rules for small screens */
 
 
-
-    
-    
-
-    body {
-        display: flex;
-        justify-content: center;
-        background: linear-gradient(#1f5961dd, #331b35dd, #000000);
-        height: 100vh;
-        
-    }
 
     .home-content {
         display: flex;
@@ -304,7 +256,7 @@ figcaption {
         color: #f2f2f2;
         text-align: center;
         padding: 14px 16px;
-        font-size: 11px;
+        font-size: 14px;
         border-radius: 8px;
     }
 
@@ -347,7 +299,7 @@ figcaption {
         font-weight: lighter;
     }
 
-    /* Main Content font styling */
+    /* Main Content font styling*/
     p {
         font-family: 'Helvetica Neue', sans-serif;
         font-size: 14px;
@@ -366,13 +318,13 @@ figcaption {
         justify-content: center;
     }
 
-    /* Social Media Icon Styling */
+    /* Social Media Icon Styling*/
     .social-media-icons-white a {
         color: white;
         font-size: 2rem;
     }
 
-    /* Social Media Icon Styling */
+    /* Social Media Icon Styling*/
     .singleCol social-media-icons-white {
         justify-content: center;
     }
@@ -380,18 +332,21 @@ figcaption {
     /* Contact info and Icons */
     .container {
         padding-bottom: 160px;
+        position: fixed;
+        bottom: 0;
         display: flex;
     }
 
     /* Name/address/Phone */
     .contact-info {
-    
-        
+        padding-bottom: 35px;
         display: flex;
-        color: aliceblue;
         flex-direction: column;
-        align-items: center;
-       
+        justify-content: center;
+        color: aliceblue;
+        margin-left: 10px;
+        position: fixed;
+        bottom: 0;
     }
 
     .contact {
@@ -402,17 +357,16 @@ figcaption {
     .inner-box {
         background-color: black;
         box-sizing: border-box;
-        width: 93%;
-        height: 96%;
+        width: 85%;
+        height: 97%;
     }
 
     .contact-socials {
         display: flex;
         justify-content: center;
-
     }
 
-    /* About Me Pic */
+    /* About Me Pic*/
     .image-2 {
         width: 115px;
         margin-top: 40px;
@@ -514,6 +468,4 @@ figcaption {
         font-size: 15px;
         text-align: left;
     }
-
-   
- }
+}
